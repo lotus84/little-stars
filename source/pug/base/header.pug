@@ -20,7 +20,7 @@ mixin header(headerMods, currentPage)
     ]
 
   header.header(class=headerMods)
-    .header__wrapper
+    .header__wrapper.container
       if(currentPage === "main")
         a.header__logo
           +icon("logo", 48, 47)

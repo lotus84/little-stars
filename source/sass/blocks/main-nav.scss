@@ -1,5 +1,22 @@
 .main-nav {
-  &__toggle {
-    display: none;
-  }
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
