@@ -1,0 +1,37 @@
+/* open-sans-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src:
+    url("../fonts/open-sans-v26-latin_cyrillic-ext_cyrillic-regular.woff2") format('woff2'),
+    url("../fonts/open-sans-v26-latin_cyrillic-ext_cyrillic-regular.woff") format('woff');
+}
+
+/* open-sans-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: local(''),
+    url("../fonts/open-sans-v26-latin_cyrillic-ext_cyrillic-700.woff2") format('woff2'),
+    url("../fonts/open-sans-v26-latin_cyrillic-ext_cyrillic-700.woff") format('woff');
+}
+
+/* rouble */
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rouble";
+
+  font-display: swap;
+  src:
+    url("../fonts/rouble.woff2") format("woff2"),
+    url("../fonts/rouble.woff") format("woff");
+}

@@ -1,0 +1,42 @@
+mixin header(headerMods, currentPage)
+  -
+    var headerLinks = [
+      {
+        href: "#",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Новости"
+      },
+      {
+        href: "#",
+        text: "Галерея"
+      },
+      {
+        href: "#",
+        text: "Расписание"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .header__wrapper
+      if(currentPage === "main")
+        a.header__logo
+          +icon("logo", 48, 47)
+          span 1&nbsp;&mdash; в&nbsp;класс
+      else
+        a.header__logo(href="main.html", aria-label="Переход на главную")
+          +icon("logo", 48, 47)
+          span 1&nbsp;&mdash; в&nbsp;класс
+      nav.main-nav
+        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          +icon("icon-burger", 20, 20)
+        .main-nav__wrapper
+          ul.main-nav__list
+            each link, index in headerLinks
+              li.main-nav__item
+                if(index === currentPage)
+                  a.main-nav__link.main-nav__link--active=link.text
+                else
+                  a.main-nav__link(href=link.href)=link.text
