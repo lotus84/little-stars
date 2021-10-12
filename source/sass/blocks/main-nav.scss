@@ -20,3 +20,21 @@
   padding: 0;
   list-style: none;
 }
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
+}
+
+.main-nav__link {
+  display: inline-flex;
+
+}
+
+.main-nav__link--active {
+
+}

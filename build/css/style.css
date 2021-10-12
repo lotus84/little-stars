@@ -722,10 +722,30 @@ button,
   list-style: none;
 }
 
+.main-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-nav__item:not(:first-child) {
+  margin-left: 16px;
+}
+
+.main-nav__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .footer {
   min-height: 100px;
   padding: 0 60px;
-  background-color: #000000;
+  color: #ffffff;
+  background-color: #4573ff;
 }
 
 .modal {
