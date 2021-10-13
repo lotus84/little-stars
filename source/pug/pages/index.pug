@@ -11,15 +11,24 @@ block main
     }
 
     h1 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
       font-size: 24px;
       line-height: 28px;
     }
 
     a {
-      color: rgb(10, 10, 175);
+      color: #4573ff;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ec4c4c;
     }
 
     li {
+      font-weight: 700;
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 7px;
@@ -27,10 +36,10 @@ block main
 
     img {
       width: 100%;
-      max-width: 300px;
+      max-width: 48px;
       height: auto;
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 768px) {
@@ -65,7 +74,7 @@ block main
     ]
 
   main.container.main-index
-    img(src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта")
+    img(src="img/sprite/logo.svg", width="48", height="47", alt="Логотип проекта")
     h1 Список страниц
     ol
       each page in pages

@@ -32,9 +32,29 @@
 
 .main-nav__link {
   display: inline-flex;
+  padding: 18px 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-black;
+  background-color: $color-default-white;
+  outline: none;
+  transition: color $trans--300, background-color $trans--300;
+}
 
+.main-nav__link[href] {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      // color: $color-default-white;
+      // background-color: $color-sunset-orange;
+      color: $color-sea-green;
+    }
+  }
 }
 
 .main-nav__link--active {
-
+  // color: $color-default-white;
+  // background-color: $color-sunset-orange;
+  color: $color-sea-green;
 }
