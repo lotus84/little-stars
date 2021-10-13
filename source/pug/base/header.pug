@@ -2,19 +2,19 @@ mixin header(headerMods, currentPage)
   -
     var headerLinks = [
       {
-        href: "#",
+        href: "main.html",
         text: "Главная"
       },
       {
-        href: "#",
+        href: "news.html",
         text: "Новости"
       },
       {
-        href: "#",
+        href: "gallery.html",
         text: "Галерея"
       },
       {
-        href: "#",
+        href: "schedule.html",
         text: "Расписание"
       },
     ]
@@ -24,7 +24,7 @@ mixin header(headerMods, currentPage)
       if(currentPage === "main")
         a.header__logo
           +icon("logo", 48, 47)
-          span 1&nbsp;&mdash; в&nbsp;класс
+          span 1&nbsp;&ndash; в&nbsp;класс
       else
         a.header__logo(href="main.html", aria-label="Переход на главную")
           +icon("logo", 48, 47)

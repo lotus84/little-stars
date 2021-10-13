@@ -1,0 +1,21 @@
+extends ../base/layout
+
+block variables
+  - const title = "О нас - сайт 1-в класса школы №56" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = 1 //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main.page-main
+    section.empty-page
+      .empty-page__wrapper.container
+        h1.visually-hidden Пустая страница
+        .empty-page__img-box
+          +icon("empty-page", 218, 216)
+        p.empty-page__text Здесь пока ничего нет...
+
+block modals
