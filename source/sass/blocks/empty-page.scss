@@ -1,0 +1,29 @@
+.empty-page {
+  display: flex;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.empty-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-page__img-box {
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.empty-page__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+}
