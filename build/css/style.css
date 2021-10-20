@@ -655,7 +655,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1610px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1119,6 +1119,164 @@ button,
   font-size: 64px;
   line-height: 87px;
   text-align: center;
+}
+
+.schedule-holidays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 60px 0;
+  color: #101010;
+  background-color: #ffffff;
+}
+
+.schedule-holidays__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.schedule-holidays__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+}
+
+.schedule-holidays__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-holidays__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.schedule-holidays__item:not(:last-child) {
+  margin-bottom: 110px;
+}
+
+.card-holidays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-holidays--blue .card-holidays__content {
+  background-color: rgba(69, 115, 255, 0.9);
+}
+
+.card-holidays--green .card-holidays__content {
+  background-color: rgba(35, 194, 114, 0.9);
+}
+
+.card-holidays--yellow .card-holidays__content {
+  background-color: rgba(247, 167, 62, 0.9);
+}
+
+.card-holidays--red .card-holidays__content {
+  background-color: rgba(236, 76, 76, 0.9);
+}
+
+.card-holidays--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-holidays--reverse .card-holidays__content {
+  left: 15%;
+}
+
+.card-holidays__img-box {
+  width: 45%;
+  max-width: 700px;
+}
+
+.card-holidays__img-box img {
+  display: block;
+  width: 100%;
+}
+
+.card-holidays__content {
+  position: relative;
+  left: -15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 750px;
+  min-height: 50%;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.card-holidays__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-holidays__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card-holidays__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.card-holidays__text:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

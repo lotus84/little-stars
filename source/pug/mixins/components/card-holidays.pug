@@ -1,0 +1,8 @@
+mixin card-holidays(props = {})
+  .card-holidays(class=props.color ? `card-holidays--${props.color}` : "card-holidays--blue", class=props.mod ? `card-holidays--${props.mod}` : null)
+    .card-holidays__img-box
+      +img("content", props.image, "jpg", 700, 600, props.alt)
+    .card-holidays__content
+      p.card-holidays__title!=props.title
+      each item in props.textList
+        p.card-holidays__text!=item

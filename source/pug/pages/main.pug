@@ -18,19 +18,19 @@ block main
         p.promo__desc Через знания к&nbsp;звездам
         h1.promo__title сайт 1-в класса школы &#8470;&nbsp;56
 
-    .container
-      //- Все данные должны выноситься в pug/data, привязываясь к бэм, а не к странице
-      //- т.е у вас будет pug/data/features.pug || intro.pug, а не main.pug || catalog.pug
-      p(style="margin-top: 40px;") Пример импорта из `pug/data`
-      h3!= heading.title
-      p= heading.description
-      p!= heading.description
-      p !{heading.description}
-      //- != и !{} позволяют html отрабатывать в pug, используйте их по умолчанию
-      //- варианты когда в тексте требуется отобразить <b>тест</b> тегами встречается редко
+    //- .container
+    //-   //- Все данные должны выноситься в pug/data, привязываясь к бэм, а не к странице
+    //-   //- т.е у вас будет pug/data/features.pug || intro.pug, а не main.pug || catalog.pug
+    //-   p(style="margin-top: 40px;") Пример импорта из `pug/data`
+    //-   h3!= heading.title
+    //-   p= heading.description
+    //-   p!= heading.description
+    //-   p !{heading.description}
+    //-   //- != и !{} позволяют html отрабатывать в pug, используйте их по умолчанию
+    //-   //- варианты когда в тексте требуется отобразить <b>тест</b> тегами встречается редко
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+    //-   p(style="margin-top: 40px;") Пример использования +img()
+    //-   p(style="margin-bottom: 40px;")
+    //-     +img("content", "placeholder", "png", 120, 120, "Пример")
 
 block modals
