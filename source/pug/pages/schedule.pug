@@ -11,13 +11,13 @@ block variables
 
 block main
   main.page-main
-    section.schedule-holidays
-      .schedule-holidays__wrapper.container
-        h2.schedule-holidays__title каникулы
-        ul.schedule-holidays__list
-          each item in holidaysList
-            li.schedule-holidays__item
-              +card-holidays(item)
+    section.empty-page
+      .empty-page__wrapper.container
+        h1.visually-hidden Пустая страница
+        .empty-page__img-box
+          +icon("empty-page", 218, 216)
+        p.empty-page__text Здесь пока ничего нет...
+
 
 
 

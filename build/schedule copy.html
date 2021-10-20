@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>сайт 1-в класса школы №56</title>
+    <title>О нас - сайт 1-в класса школы №56</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,11 +25,9 @@
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a>
+                <li class="main-nav__item"><a class="main-nav__link" href="main.html">Главная</a>
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="schedule.html">Расписание</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="holidays.html">Каникулы</a>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Расписание</a>
                 </li>
                 <li class="main-nav__item"><a class="main-nav__link" href="gallery.html">Галерея</a>
                 </li>
@@ -39,12 +37,52 @@
         </div>
       </header>
       <main class="page-main">
-        <section class="promo">
-          <div class="promo__bg"><img src="img/content/img-promo.png" srcset="img/content/img-promo@2x.png 2x" width="1920" height="500" alt="канцтовары">
-          </div>
-          <div class="promo__wrapper container">
-            <p class="promo__desc">Через знания к&nbsp;звездам</p>
-            <h1 class="promo__title">сайт 1-в класса школы &#8470;&nbsp;56</h1>
+        <section class="schedule-holidays">
+          <div class="schedule-holidays__wrapper container">
+            <h2 class="schedule-holidays__title">каникулы</h2>
+            <ul class="schedule-holidays__list">
+              <li class="schedule-holidays__item">
+                <div class="card-holidays card-holidays--yellow">
+                  <div class="card-holidays__img-box"><img src="img/content/autumn.jpg" srcset="img/content/autumn@2x.jpg 2x" width="700" height="600" alt="осень">
+                  </div>
+                  <div class="card-holidays__content">
+                    <p class="card-holidays__title">осенние каникулы</p>
+                    <p class="card-holidays__text">25.10.2021 - 07.11.2021</p>
+                  </div>
+                </div>
+              </li>
+              <li class="schedule-holidays__item">
+                <div class="card-holidays card-holidays--blue card-holidays--reverse">
+                  <div class="card-holidays__img-box"><img src="img/content/winter.jpg" srcset="img/content/winter@2x.jpg 2x" width="700" height="600" alt="зима">
+                  </div>
+                  <div class="card-holidays__content">
+                    <p class="card-holidays__title">зимние каникулы</p>
+                    <p class="card-holidays__text">30.12.2021 - 08.01.2022</p>
+                    <p class="card-holidays__text">14.02.2022 - 20.02.2022</p>
+                  </div>
+                </div>
+              </li>
+              <li class="schedule-holidays__item">
+                <div class="card-holidays card-holidays--red">
+                  <div class="card-holidays__img-box"><img src="img/content/spring.jpg" srcset="img/content/spring@2x.jpg 2x" width="700" height="600" alt="весна">
+                  </div>
+                  <div class="card-holidays__content">
+                    <p class="card-holidays__title">весенние каникулы</p>
+                    <p class="card-holidays__text">26.03.2022 - 02.04.2022</p>
+                  </div>
+                </div>
+              </li>
+              <li class="schedule-holidays__item">
+                <div class="card-holidays card-holidays--green card-holidays--reverse">
+                  <div class="card-holidays__img-box"><img src="img/content/summer.jpg" srcset="img/content/summer@2x.jpg 2x" width="700" height="600" alt="лето">
+                  </div>
+                  <div class="card-holidays__content">
+                    <p class="card-holidays__title">летние каникулы</p>
+                    <p class="card-holidays__text">01.06.2022 - 31.08.2022</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
