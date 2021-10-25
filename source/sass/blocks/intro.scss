@@ -1,0 +1,59 @@
+.intro {
+  display: flex;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 300px;
+}
+
+.intro--blue {
+  color: $color-default-white;
+  background-color: $color-royal-blue;
+  background-image: url("../img/svg/bg-intro-blue-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--green {
+  color: $color-default-white;
+  background-color: $color-sea-green;
+  background-image: url("../img/svg/bg-intro-green-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--red {
+  color: $color-default-white;
+  background-color: $color-sunset-orange;
+  background-image: url("../img/svg/bg-intro-red-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--yellow {
+  color: $color-default-white;
+  background-color: $color-yellow-orange;
+  background-image: url("../img/svg/bg-intro-yellow-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+}
