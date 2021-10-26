@@ -1018,8 +1018,10 @@ button,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: calc(100vh - 60px);
+  min-height: 650px;
   color: #ffffff;
-  background-color: #9D7C64;
+  background-color: #C17108;
 }
 
 .promo__bg {
@@ -1031,12 +1033,76 @@ button,
   height: 100%;
 }
 
-.promo__bg img {
+.promo__bg-star {
+  position: absolute;
+}
+
+.promo__bg-star svg {
   display: block;
+}
+
+.promo__bg-star--1 {
+  top: 2vh;
+  left: 5.7%;
+  -webkit-transform: rotate(48deg);
+  transform: rotate(48deg);
+}
+
+.promo__bg-star--2 {
+  top: 32.2vh;
+  left: 16.7%;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
+.promo__bg-star--3 {
+  top: 49vh;
+  left: 7%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.promo__bg-star--4 {
+  top: 42vh;
+  left: 55%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.promo__bg-star--5 {
+  top: 9vh;
+  right: 4%;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.promo__bg-star--6 {
+  top: 35.7vh;
+  right: 19.7%;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.promo__bg-star--7 {
+  top: 43.7vh;
+  right: 3.2%;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.promo__bg-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.promo__bg-img svg {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .promo__wrapper {
@@ -1050,8 +1116,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 108px;
+  padding-top: 10vh;
+  padding-bottom: 100px;
 }
 
 .promo__desc {

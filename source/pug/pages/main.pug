@@ -13,10 +13,32 @@ block main
   main.page-main
     section.promo
       .promo__bg
-        +img("content", "img-promo", "png", 1920, 500, "канцтовары")
+        .promo__bg-star.promo__bg-star--1
+          +icon("icon-star", 95, 95)
+        .promo__bg-star.promo__bg-star--2
+          +icon("icon-star", 60, 60)
+        .promo__bg-star.promo__bg-star--3
+          +icon("icon-star", 40, 40)
+        .promo__bg-star.promo__bg-star--4
+          +icon("icon-star", 30, 30)
+        .promo__bg-star.promo__bg-star--5
+          +icon("icon-star", 80, 80)
+        .promo__bg-star.promo__bg-star--6
+          +icon("icon-star", 40, 40)
+        .promo__bg-star.promo__bg-star--7
+          +icon("icon-star", 50, 50)
+        .promo__bg-img.promo__bg-img--1
+          +icon("bg-cloud-1", 1440, 360)
+        .promo__bg-img.promo__bg-img--2
+          +icon("bg-cloud-2", 1440, 258)
+        .promo__bg-img.promo__bg-img--3
+          +icon("bg-cloud-3", 1440, 131)
+        //- +img("content", "img-promo", "png", 1920, 500, "канцтовары")
       .promo__wrapper.container
         p.promo__desc Через знания к&nbsp;звездам
         h1.promo__title сайт 1-в класса школы &#8470;&nbsp;56
+
+    section(style="height: 500px")
 
     //- .container
     //-   //- Все данные должны выноситься в pug/data, привязываясь к бэм, а не к странице
