@@ -1,0 +1,8 @@
+mixin card-weekday(props = {})
+  .card-weekday(class=props.color ? `card-weekday--${props.color}` : null)
+    .card-weekday__header
+      p!=props.day
+    .card-weekday__content
+      ol.card-weekday__list
+        each item in props.lessons
+          li.card-weekday__item!=item

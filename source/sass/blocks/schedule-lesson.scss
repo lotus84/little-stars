@@ -1,0 +1,32 @@
+.schedule-lesson {
+  display: flex;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url("../img/svg/bg-spots-yellow.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.schedule-lesson__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.schedule-lesson__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 32px * 2);
+  margin: 0;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-lesson__item {
+  display: flex;
+  width: calc((100% - 32px * 6) / 3 );
+  margin: 32px;
+}

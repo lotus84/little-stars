@@ -15,6 +15,17 @@ block main
       .intro__wrapper.container
         h2.intro__title Расписание уроков
 
+    section.schedule-lesson
+      .schedule-lesson__wrapper.container
+        ul.schedule-lesson__list
+          each item in lessonsList
+            li.schedule-lesson__item
+              +card-weekday(item)
+
+    section.intro.intro--blue
+      .intro__wrapper.container
+        h2.intro__title Расписание звонков
+
     section.empty-page
       .empty-page__wrapper.container
         h1.visually-hidden Пустая страница

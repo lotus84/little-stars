@@ -1336,6 +1336,163 @@ button,
   text-transform: uppercase;
 }
 
+.card-weekday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  color: #101010;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-weekday--yellow {
+  border: 2px solid #f7a73e;
+}
+
+.card-weekday--yellow .card-weekday__header {
+  color: #ffffff;
+  background-color: #f7a73e;
+}
+
+.card-weekday--blue {
+  border: 2px solid #4573ff;
+}
+
+.card-weekday--blue .card-weekday__header {
+  color: #ffffff;
+  background-color: #4573ff;
+}
+
+.card-weekday--green {
+  border: 2px solid #23C272;
+}
+
+.card-weekday--green .card-weekday__header {
+  color: #ffffff;
+  background-color: #23C272;
+}
+
+.card-weekday--red {
+  border: 2px solid #ec4c4c;
+}
+
+.card-weekday--red .card-weekday__header {
+  color: #ffffff;
+  background-color: #ec4c4c;
+}
+
+.card-weekday__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px 20px;
+}
+
+.card-weekday__header p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-weekday__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 30px;
+}
+
+.card-weekday__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: lesson-counter;
+}
+
+.card-weekday__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: lowercase;
+  counter-increment: lesson-counter;
+}
+
+.card-weekday__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card-weekday__item::before {
+  content: counter(lesson-counter) " - ";
+}
+
+.card-weekday__item span {
+  font-weight: 700;
+}
+
+.schedule-lesson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url("../img/svg/bg-spots-yellow.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.schedule-lesson__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.schedule-lesson__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: calc(100% + 32px * 2);
+  margin: 0;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-lesson__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc((100% - 32px * 6) / 3);
+  margin: 32px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
