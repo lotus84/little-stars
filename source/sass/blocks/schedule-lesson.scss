@@ -2,9 +2,14 @@
   display: flex;
   width: 100%;
   padding: 60px 0;
-  background-image: url("../img/svg/bg-spots-yellow.svg");
-  background-repeat: repeat;
+  // background-image: url("../img/svg/bg-spots-yellow.svg");
+  // background-image: url("../img/svg/bg-pattern-blue.svg");
+  // background-repeat: repeat;
+  // background-position: 0 0;
+  color: $color-black;
+  background-image: url("../img/svg/bg-pattern-randomized.svg");
   background-position: 0 0;
+  background-size: cover;
 }
 
 .schedule-lesson__wrapper {
@@ -12,15 +17,11 @@
   flex-direction: column;
 }
 
-
 .schedule-lesson__list {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 32px * 2);
-  margin: 0;
-  margin-left: -32px;
-  margin-right: -32px;
-  margin-bottom: -32px;
+  margin: -32px;
   padding: 0;
   list-style: none;
 }

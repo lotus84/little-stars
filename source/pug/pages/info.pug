@@ -7,13 +7,13 @@ block variables
   - const headerMods = ""
   - const hasFooter = true
   - const footerMods = ""
-  - const currentPage = 4 //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const currentPage = 2 //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
 block main
   main.page-main
     section.intro.intro--red
       .intro__wrapper.container
-        h2.intro__title Галерея
+        h2.intro__title Полезная информация
 
     section.empty-page
       .empty-page__wrapper.container
@@ -21,5 +21,8 @@ block main
         .empty-page__img-box
           +icon("empty-page", 218, 216)
         p.empty-page__text Здесь пока ничего нет...
+
+
+
 
 block modals

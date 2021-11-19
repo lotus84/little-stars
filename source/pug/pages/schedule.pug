@@ -26,14 +26,14 @@ block main
       .intro__wrapper.container
         h2.intro__title Расписание звонков
 
-    section.empty-page
-      .empty-page__wrapper.container
-        h1.visually-hidden Пустая страница
-        .empty-page__img-box
-          +icon("empty-page", 218, 216)
-        p.empty-page__text Здесь пока ничего нет...
-
-
+    section.schedule-call
+      .schedule-call__wrapper.container
+        .schedule-call__img-box
+          +img("content", "img-schedule", "jpg", 590, 298, "Расписание звонков")
+        ul.schedule-call__list
+          each item in callList
+            li.schedule-call__item
+              +card-call(item)
 
 
 block modals
