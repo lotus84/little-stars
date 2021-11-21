@@ -38,7 +38,12 @@ block main
         p.promo__desc Через знания к&nbsp;звездам
         h1.promo__title сайт 1-в класса школы &#8470;&nbsp;56
 
-    section(style="height: 500px")
+    section.main-parts
+      .main-parts__wrapper.container
+        ul.main-parts__list
+          each item in sectionsList
+            li.main-parts__item
+              +card-menu(item)
 
     //- .container
     //-   //- Все данные должны выноситься в pug/data, привязываясь к бэм, а не к странице
