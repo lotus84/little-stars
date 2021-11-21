@@ -1,0 +1,6 @@
+mixin news(props = {})
+  .news
+    time.news__time(datetime=props.datetime)!=props.date
+    .news__text
+      each item in props.text
+        p!=item

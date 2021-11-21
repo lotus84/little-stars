@@ -15,14 +15,13 @@ block main
       .intro__wrapper.container
         h2.intro__title Полезная информация
 
-    section.empty-page
-      .empty-page__wrapper.container
-        h1.visually-hidden Пустая страница
-        .empty-page__img-box
-          +icon("empty-page", 218, 216)
-        p.empty-page__text Здесь пока ничего нет...
-
-
+    section.info
+      .info__wrapper.container
+        ul.info__list
+          each item in infoList
+            li.info__item
+              span!=item.text
+              a(href=item.link download) Скачать
 
 
 block modals
