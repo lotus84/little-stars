@@ -6,16 +6,19 @@
 }
 
 .main-parts__list {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% + 10px * 2);
-  margin: -10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
   padding: 0;
   list-style: none;
+
+  @include vp--767 {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
 }
 
 .main-parts__item {
-  width: 50%;
-  max-width: 590px;
-  margin: 10px;
+  display: flex;
+  width: 100%;
 }

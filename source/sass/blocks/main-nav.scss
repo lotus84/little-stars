@@ -6,11 +6,29 @@
 
 .main-nav__toggle {
   display: none;
+
+  @include vp--1023 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
 }
 
 .main-nav__wrapper {
   display: flex;
   align-items: center;
+
+  @include vp--1023 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $color-default-white;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .main-nav__list {
@@ -19,6 +37,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp--1023 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .main-nav__item {

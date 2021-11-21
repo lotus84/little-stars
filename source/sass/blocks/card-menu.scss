@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
   padding: 30px;
   padding-top: 160px;
@@ -12,6 +12,15 @@
   background-color: #3a4f57;
   border-radius: 4px;
   overflow: hidden;
+
+  @include vp--1023 {
+    padding-top: 60px;
+  }
+
+  @include vp--767 {
+    padding: 20px;
+    padding-top: 50px;
+  }
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover .card-menu__img-box,
@@ -75,6 +84,16 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @include vp--1023 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  @include vp--767 {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
