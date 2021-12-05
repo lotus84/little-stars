@@ -2065,6 +2065,10 @@ button,
   .info {
     padding: 45px 0;
   }
+
+  .news-block {
+    padding: 45px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2205,6 +2209,27 @@ button,
 
   .info__item a {
     width: 100%;
+  }
+
+  .news-block {
+    padding: 30px 0;
+  }
+
+  .news-block__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .news__time {
+    margin-bottom: 16px;
+  }
+
+  .news__text {
+    padding: 20px;
+  }
+
+  .news__text p {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
