@@ -38,13 +38,15 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 20px;
 
   @include vp--767 {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 
@@ -56,6 +58,7 @@
   line-height: 14px;
   color: inherit;
   text-transform: uppercase;
+  white-space: nowrap;
 
   @include vp--767 {
     margin-bottom: 20px;
@@ -72,7 +75,7 @@
     transition: width $trans--300;
   }
 
-  @media (hover: hover), screen and (min-width: 0\0) {
+  @media (hover: hover) {
     &:hover,
     &:focus {
       &::before {
@@ -90,6 +93,10 @@
   margin-left: 16px;
   padding: 0;
   list-style: none;
+
+  @include vp--767 {
+    margin-left: 0;
+  }
 }
 
 .footer__social-item {
@@ -112,7 +119,7 @@
   background-color: $color-default-white;
   transition: color $trans--300, background-color $trans--300;
 
-  @media (hover: hover), screen and (min-width: 0\0) {
+  @media (hover: hover) {
     &:hover,
     &:focus {
       color: $color-sunset-orange;
