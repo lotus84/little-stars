@@ -19,8 +19,6 @@ block main
           +icon("icon-star", 60, 60)
         .promo__bg-star.promo__bg-star--3.js-parallax(data-rellax-speed="3")
           +icon("icon-star", 40, 40)
-        //- .promo__bg-star.promo__bg-star--4.js-parallax(data-rellax-speed="4")
-          +icon("icon-star", 30, 30)
         .promo__bg-star.promo__bg-star--5.js-parallax(data-rellax-speed="0")
           +icon("icon-star", 80, 80)
         .promo__bg-star.promo__bg-star--6.js-parallax(data-rellax-speed="2")
@@ -33,7 +31,6 @@ block main
           +icon("bg-cloud-2", 1440, 258)
         .promo__bg-img.promo__bg-img--3.js-parallax(data-rellax-speed="2" data-rellax-percentage="0.1")
           +icon("bg-cloud-3", 1440, 131)
-        //- +img("content", "img-promo", "png", 1920, 500, "канцтовары")
       .promo__wrapper.container
         p.promo__desc Через знания к&nbsp;звездам
         h1.promo__title сайт 1-в класса школы &#8470;&nbsp;56
@@ -44,20 +41,5 @@ block main
           each item in sectionsList
             li.main-parts__item
               +card-menu(item)
-
-    //- .container
-    //-   //- Все данные должны выноситься в pug/data, привязываясь к бэм, а не к странице
-    //-   //- т.е у вас будет pug/data/features.pug || intro.pug, а не main.pug || catalog.pug
-    //-   p(style="margin-top: 40px;") Пример импорта из `pug/data`
-    //-   h3!= heading.title
-    //-   p= heading.description
-    //-   p!= heading.description
-    //-   p !{heading.description}
-    //-   //- != и !{} позволяют html отрабатывать в pug, используйте их по умолчанию
-    //-   //- варианты когда в тексте требуется отобразить <b>тест</b> тегами встречается редко
-
-    //-   p(style="margin-top: 40px;") Пример использования +img()
-    //-   p(style="margin-bottom: 40px;")
-    //-     +img("content", "placeholder", "png", 120, 120, "Пример")
 
 block modals
