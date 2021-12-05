@@ -88,6 +88,18 @@
   }
 }
 
+.promo__bg-img--3 {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: $color-default-white;
+  }
+}
+
 .promo__wrapper {
   display: flex;
   flex-direction: column;
