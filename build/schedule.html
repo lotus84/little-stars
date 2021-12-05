@@ -18,12 +18,17 @@
               <use xlink:href="#logo"></use>
             </svg><span>1&nbsp;&mdash; в&nbsp;класс</span></a>
           <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+            <button class="main-nav__toggle btn-reset js-burger-btn" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
               <svg width="20" height="16" aria-hidden="true">
                 <use xlink:href="#icon-burger"></use>
               </svg>
             </button>
-            <div class="main-nav__wrapper">
+            <div class="main-nav__wrapper js-mobile-menu">
+              <button class="main-nav__btn-close btn-reset js-close-btn" type="button" aria-label="закрыть меню" aria-pressed="false">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="main.html">Главная</a>
                 </li>

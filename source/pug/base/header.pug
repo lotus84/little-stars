@@ -38,9 +38,11 @@ mixin header(headerMods, currentPage)
           +icon("logo", 48, 47)
           span 1&nbsp;&mdash; в&nbsp;класс
       nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+        button.main-nav__toggle.btn-reset.js-burger-btn(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
           +icon("icon-burger", 20, 16)
-        .main-nav__wrapper
+        .main-nav__wrapper.js-mobile-menu
+          button.main-nav__btn-close.btn-reset.js-close-btn(type="button", aria-label="закрыть меню", aria-pressed="false")
+            +icon("icon-close", 20, 20)
           ul.main-nav__list
             each link, index in headerLinks
               li.main-nav__item
