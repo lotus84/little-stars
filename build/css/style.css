@@ -1549,13 +1549,13 @@ button,
 }
 
 .schedule-lesson__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: calc(100% + 32px * 2);
-  margin: -32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1564,8 +1564,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc((100% - 32px * 6) / 3);
-  margin: 32px;
+  width: 100%;
+  margin: 0;
 }
 
 .schedule-call {
@@ -1646,7 +1646,7 @@ button,
 
 .card-call__left {
   position: relative;
-  width: 30%;
+  width: 35%;
   padding: 22px 16px;
 }
 
@@ -1670,7 +1670,7 @@ button,
 }
 
 .card-call__right {
-  width: 70%;
+  width: 65%;
   padding: 22px 16px;
 }
 
@@ -2078,6 +2078,34 @@ button,
     padding: 45px 0;
   }
 
+  .schedule-lesson__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .schedule-call {
+    padding: 45px 0;
+  }
+
+  .card-call__left {
+    padding: 16px;
+  }
+
+  .card-call__left p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .card-call__right {
+    padding: 16px;
+  }
+
+  .card-call__right p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
   .card-menu {
     padding-top: 60px;
   }
@@ -2268,8 +2296,66 @@ button,
     letter-spacing: 0.05em;
   }
 
+  .card-weekday__header {
+    padding: 10px 16px;
+  }
+
+  .card-weekday__header p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card-weekday__content {
+    padding: 16px;
+  }
+
+  .card-weekday__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card-weekday__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
   .schedule-lesson {
     padding: 30px 0;
+  }
+
+  .schedule-lesson__list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px 0;
+  }
+
+  .schedule-call {
+    padding: 30px 0;
+  }
+
+  .schedule-call__img-box {
+    display: none;
+  }
+
+  .schedule-call__list {
+    width: 100%;
+  }
+
+  .card-call__left {
+    padding: 16px 12px;
+  }
+
+  .card-call__left p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card-call__right {
+    padding: 16px 12px;
+  }
+
+  .card-call__right p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .card-menu {

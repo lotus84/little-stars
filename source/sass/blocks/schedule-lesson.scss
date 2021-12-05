@@ -22,16 +22,27 @@
 }
 
 .schedule-lesson__list {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% + 32px * 2);
-  margin: -32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp--1023 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  @include vp--767 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px 0;
+  }
 }
 
 .schedule-lesson__item {
   display: flex;
-  width: calc((100% - 32px * 6) / 3 );
-  margin: 32px;
+  width: 100%;
+  margin: 0;
 }
