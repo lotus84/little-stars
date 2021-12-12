@@ -118,11 +118,16 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20px;
-    width: calc(100% - 20px * 2);
+    left: 10px;
+    width: calc(100% - 10px * 2);
     height: 4px;
     background-color: $color-sea-green;
     opacity: 0;
+
+    @include vp--1023 {
+      left: 20px;
+      width: calc(100% - 20px * 2);
+    }
   }
 }
 
