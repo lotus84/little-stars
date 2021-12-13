@@ -2,7 +2,7 @@ mixin header(headerMods, currentPage)
   -
     var headerLinks = [
       {
-        href: "main.html",
+        href: "index.html",
         text: "Главная"
       },
       {
@@ -34,7 +34,7 @@ mixin header(headerMods, currentPage)
           +icon("logo", 48, 47)
           span 1&nbsp;&ndash; в&nbsp;класс
       else
-        a.header__logo(href="main.html", aria-label="Переход на главную")
+        a.header__logo(href="index.html", aria-label="Переход на главную")
           +icon("logo", 48, 47)
           span 1&nbsp;&mdash; в&nbsp;класс
       nav.main-nav
