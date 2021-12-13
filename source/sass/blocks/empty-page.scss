@@ -3,6 +3,16 @@
   width: 100%;
   padding-top: 90px;
   padding-bottom: 150px;
+
+  @include vp--1023 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include vp--767 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .empty-page__wrapper {
@@ -15,8 +25,24 @@
   display: flex;
   justify-content: center;
 
+  @include vp--767 {
+    width: 40%;
+    max-width: 150px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 70px;
+
+    @include vp--767 {
+      margin-bottom: 20px;
+    }
+  }
+
+  svg {
+    @include vp--767 {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -26,4 +52,13 @@
   font-size: 64px;
   line-height: 87px;
   text-align: center;
+
+  @include vp--1023 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @include vp--767 {
+    font-size: 22px;
+  }
 }

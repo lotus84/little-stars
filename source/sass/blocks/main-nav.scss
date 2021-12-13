@@ -6,11 +6,58 @@
 
 .main-nav__toggle {
   display: none;
+
+  @include vp--1023 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
 }
+
+.main-nav__btn-close {
+  display: none;
+
+  @include vp--1023 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
 
 .main-nav__wrapper {
   display: flex;
   align-items: center;
+
+  @include vp--1023 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: stretch;
+    justify-content: flex-end;
+    width: 100%;
+    // min-height: 100vh;
+    background-color: rgba($color-black, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.main-nav__wrapper.active {
+  @include vp--1023 {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 .main-nav__list {
@@ -19,18 +66,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp--1023 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100%;
+    max-width: 320px;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    background-color: $color-default-white;
+    overflow-x: auto;
+  }
 }
 
 .main-nav__item {
   display: flex;
   align-items: center;
 
+  @include vp--1023 {
+    width: 100%;
+  }
+
   &:not(:first-child) {
     margin-left: 16px;
+
+    @include vp--1023 {
+      margin-left: 0;
+    }
   }
 }
 
 .main-nav__link {
+  position: relative;
   display: inline-flex;
   padding: 18px 10px;
   font-weight: 400;
@@ -40,21 +109,41 @@
   background-color: $color-default-white;
   outline: none;
   transition: color $trans--300, background-color $trans--300;
+
+  @include vp--1023 {
+    padding: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: calc(100% - 10px * 2);
+    height: 4px;
+    background-color: $color-sea-green;
+    opacity: 0;
+
+    @include vp--1023 {
+      left: 20px;
+      width: calc(100% - 20px * 2);
+    }
+  }
 }
 
 .main-nav__link[href] {
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
-      // color: $color-default-white;
-      // background-color: $color-sunset-orange;
       color: $color-sea-green;
     }
   }
 }
 
 .main-nav__link--active {
-  // color: $color-default-white;
-  // background-color: $color-sunset-orange;
   color: $color-sea-green;
+
+  &::before {
+    opacity: 1;
+  }
 }

@@ -4,6 +4,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 
 import {initModals} from './modules/modals/init-modals';
+import {initParallax} from './modules/init-parallax';
+import {toggleMobileMenu} from './modules/toggle-mobile-menu';
 
 // ---------------------------------
 
@@ -21,6 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
+  initParallax();
+  toggleMobileMenu();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

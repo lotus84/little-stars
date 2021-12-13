@@ -1,0 +1,6 @@
+mixin card-menu(props = {})
+  a.card-menu(href=props.link)
+    .card-menu__img-box
+      +img("content", props.img, "jpg", 590, 300, props.title)
+    p.card-menu__title!=props.title
+    span.card-menu__fake-btn Подробнее

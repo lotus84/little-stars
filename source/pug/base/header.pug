@@ -2,20 +2,28 @@ mixin header(headerMods, currentPage)
   -
     var headerLinks = [
       {
-        href: "main.html",
+        href: "index.html",
         text: "Главная"
-      },
-      {
-        href: "news.html",
-        text: "Новости"
-      },
-      {
-        href: "gallery.html",
-        text: "Галерея"
       },
       {
         href: "schedule.html",
         text: "Расписание"
+      },
+      {
+        href: "info.html",
+        text: "Полезное"
+      },
+      {
+        href: "holidays.html",
+        text: "Каникулы"
+      },
+      //- {
+      //-   href: "news.html",
+      //-   text: "Новости"
+      //- },
+      {
+        href: "gallery.html",
+        text: "Галерея"
       },
     ]
 
@@ -26,13 +34,15 @@ mixin header(headerMods, currentPage)
           +icon("logo", 48, 47)
           span 1&nbsp;&ndash; в&nbsp;класс
       else
-        a.header__logo(href="main.html", aria-label="Переход на главную")
+        a.header__logo(href="index.html", aria-label="Переход на главную")
           +icon("logo", 48, 47)
           span 1&nbsp;&mdash; в&nbsp;класс
       nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
-        .main-nav__wrapper
+        button.main-nav__toggle.btn-reset.js-burger-btn(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          +icon("icon-burger", 20, 16)
+        .main-nav__wrapper.js-mobile-menu
+          button.main-nav__btn-close.btn-reset.js-close-btn(type="button", aria-label="закрыть меню", aria-pressed="false")
+            +icon("icon-close", 20, 20)
           ul.main-nav__list
             each link, index in headerLinks
               li.main-nav__item

@@ -1,0 +1,82 @@
+.intro {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include vp--1023 {
+    min-height: 180px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include vp--767 {
+    min-height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.intro--blue {
+  color: $color-default-white;
+  background-color: $color-royal-blue;
+  background-image: url("../img/svg/bg-intro-blue-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--green {
+  color: $color-default-white;
+  background-color: $color-sea-green;
+  background-image: url("../img/svg/bg-intro-green-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--red {
+  color: $color-default-white;
+  background-color: $color-sunset-orange;
+  background-image: url("../img/svg/bg-intro-red-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro--yellow {
+  color: $color-default-white;
+  background-color: $color-yellow-orange;
+  background-image: url("../img/svg/bg-intro-yellow-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+
+  @include vp--1023 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  @include vp--767 {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+  }
+}

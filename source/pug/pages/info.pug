@@ -1,0 +1,27 @@
+extends ../base/layout
+
+block variables
+  - const title = "О нас - сайт 1-в класса школы №56" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = 2 //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main.page-main
+    section.intro.intro--red
+      .intro__wrapper.container
+        h2.intro__title Полезная информация
+
+    section.info
+      .info__wrapper.container
+        ul.info__list
+          each item in infoList
+            li.info__item
+              span!=item.text
+              a(href=item.link download) Скачать
+
+
+block modals
