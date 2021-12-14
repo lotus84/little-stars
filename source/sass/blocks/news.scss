@@ -19,6 +19,9 @@
 }
 
 .news__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 30px;
   color: $color-black;
   background-color: $color-default-white;
@@ -50,7 +53,8 @@
   }
 }
 
-.news__images {
+.news__images,
+.news__videos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 30px;
@@ -62,10 +66,12 @@
   }
 }
 
-.news__img-box {
+.news__img-box,
+.news__media-box {
   width: 100%;
 
-  img {
+  img,
+  video {
     display: block;
     width: 100%;
     object-fit: cover;

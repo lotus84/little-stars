@@ -10,4 +10,11 @@ mixin news(props = {})
           each image in props.images
             .news__img-box
               img(src=`img/content/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+      if props.videos
+        .news__videos
+          each video in props.videos
+            .news__media-box
+              video(preload="metadata" controls)
+                source(src="video/VID_20211001_085018.mp4" type="video/mp4")
+
 
