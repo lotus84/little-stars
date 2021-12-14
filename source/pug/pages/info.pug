@@ -18,6 +18,11 @@ block main
     section.info
       .info__wrapper.container
         .info__content
+          h3.info__content-title Правила школьной жизни
+          ol.info__content-list
+            each item in rulesList
+              li.info__content-item!=item
+        .info__content
           h3.info__content-title Развитие интереса к&nbsp;чтению у&nbsp;ребенка и&nbsp;формирование читательской состоятельности
           ol.info__content-list
             each item in readList
