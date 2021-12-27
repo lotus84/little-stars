@@ -18,20 +18,38 @@ block main
     section.info
       .info__wrapper.container
         .info__content
+          h3.info__content-title Вот советы, как сделать каникулы интересными для себя и&nbsp;детей
+          ol.info__content-list
+            each item in winterAdviceList
+              li.info__content-item!=item
+          p.info__content-text <b>САМОЕ ВАЖНОЕ:</b> всё что кажется вам и&nbsp;детям интересным, фотографируйте. Ребята в&nbsp;классе покажут и&nbsp;расскажут на&nbsp;первом классном часе.
+          p.info__content-text <b>И&nbsp;помните, удачные каникулы&nbsp;&mdash; запланированные каникулы!</b>
+        .info__content.info__content--green
+          h3.info__content-title Рекомендовано для чтения на&nbsp;каникулах (1&nbsp;класс 1&nbsp;полугодие)
+          p.info__content-subtitle Русские народные сказки:
+          ol.info__content-list
+            each item in winterReadingList
+              li.info__content-item!=item
+        .info__content.info__content--red
+          h3.info__content-title Памятка учащимся на&nbsp;зимние каникулы
+          ol.info__content-list
+            each item in rulesWinterList
+              li.info__content-item!=item
+        .info__content
           h3.info__content-title Правила школьной жизни
           ol.info__content-list
             each item in rulesList
               li.info__content-item!=item
-        .info__content
+        .info__content.info__content--green
           h3.info__content-title Развитие интереса к&nbsp;чтению у&nbsp;ребенка и&nbsp;формирование читательской состоятельности
           ol.info__content-list
             each item in readList
               li.info__content-item!=item
-        ul.info__list
-          each item in infoList
-            li.info__item
-              span!=item.text
-              a(href=item.link download) Скачать
+        //- ul.info__list
+        //-   each item in infoList
+        //-     li.info__item
+        //-       span!=item.text
+        //-       a(href=item.link download) Скачать
 
 
 block modals
