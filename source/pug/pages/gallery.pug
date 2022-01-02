@@ -15,6 +15,20 @@ block main
       .intro__wrapper.container
         h2.intro__title Галерея
 
-    +empty-page()
+    section.gallery.js-slider-block
+      .gallery__wrapper.container
+        .gallery__swiper.swiper
+          .gallery__swiper-wrapper.swiper-wrapper
+            each image in imagesList
+              .gallery__slide.swiper-slide
+                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+          .gallery__swiper-controls
+            button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
+              +icon("arrow-left", 50, 50)
+            .gallery__swiper-pagination.swiper-pagination
+            button.gallery__swiper-button.gallery__swiper-button--next(type="button" aria-label="Следующий слайд")
+              +icon("arrow-right", 50, 50)
+
+    //- +empty-page()
 
 block modals
