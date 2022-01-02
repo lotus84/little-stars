@@ -17,6 +17,7 @@ block main
 
     section.gallery.js-slider-block
       .gallery__wrapper.container
+        h2.gallery__title Декабрь 2021
         .gallery__swiper.swiper
           .gallery__swiper-wrapper.swiper-wrapper
             each image in imagesList
@@ -29,6 +30,35 @@ block main
             button.gallery__swiper-button.gallery__swiper-button--next(type="button" aria-label="Следующий слайд")
               +icon("arrow-right", 50, 50)
 
-    //- +empty-page()
+    section.gallery.js-slider-block
+      .gallery__wrapper.container
+        h2.gallery__title Октябрь - ноябрь 2021
+        .gallery__swiper.swiper
+          .gallery__swiper-wrapper.swiper-wrapper
+            each image in imagesNovemberList
+              .gallery__slide.swiper-slide
+                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+          .gallery__swiper-controls
+            button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
+              +icon("arrow-left", 50, 50)
+            .gallery__swiper-pagination.swiper-pagination
+            button.gallery__swiper-button.gallery__swiper-button--next(type="button" aria-label="Следующий слайд")
+              +icon("arrow-right", 50, 50)
+
+    section.gallery.js-slider-block
+      .gallery__wrapper.container
+        h2.gallery__title Сентябрь 2021
+        .gallery__swiper.swiper
+          .gallery__swiper-wrapper.swiper-wrapper
+            each image in imagesSeptemberList
+              .gallery__slide.swiper-slide
+                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+          .gallery__swiper-controls
+            button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
+              +icon("arrow-left", 50, 50)
+            .gallery__swiper-pagination.swiper-pagination
+            button.gallery__swiper-button.gallery__swiper-button--next(type="button" aria-label="Следующий слайд")
+              +icon("arrow-right", 50, 50)
+
 
 block modals
