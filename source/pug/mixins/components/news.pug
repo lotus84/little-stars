@@ -4,8 +4,8 @@ mixin news(props = {})
     .news__wrapper
       if props.text
         .news__text
-          each item in props.text
-            p!=item
+          each textItem in props.text
+            p!=textItem
       if props.images
         .news__images
           each image in props.images
