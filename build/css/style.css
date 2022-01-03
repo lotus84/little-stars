@@ -2893,6 +2893,18 @@ button,
   margin-bottom: 24px;
 }
 
+.gallery__slide {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.gallery__slide img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .gallery__swiper-controls {
   position: relative;
   display: -webkit-box;
@@ -3613,6 +3625,11 @@ button,
   .gallery {
     padding-top: 20px;
     padding-bottom: 30px;
+  }
+
+  .gallery__title {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .gallery__swiper-pagination.swiper-pagination-fraction {
