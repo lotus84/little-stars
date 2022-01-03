@@ -2,9 +2,10 @@ mixin news(props = {})
   .news
     time.news__time(datetime=props.datetime)!=props.date
     .news__wrapper
-      .news__text
-        each item in props.text
-          p!=item
+      if props.text
+        .news__text
+          each item in props.text
+            p!=item
       if props.images
         .news__images
           each image in props.images
@@ -16,5 +17,9 @@ mixin news(props = {})
             .news__media-box
               video(preload="metadata" controls)
                 source(src="video/VID_20211001_085018.mp4" type="video/mp4")
-
-
+      if props.links
+        .news__link-list
+          each link in props.links
+            .news__link-item
+              span!=link.text
+              a.news__link(href=link.href, download=link.download ? true : null) Скачать

@@ -2840,6 +2840,11 @@ button,
   width: 100%;
 }
 
+.news__images:not(:last-child),
+.news__videos:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .news__img-box,
 .news__media-box {
   width: 100%;
@@ -2854,6 +2859,56 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.news__link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.news__link-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #41dc8f;
+}
+
+.news__link-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.news__link-item span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.news__link {
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4573ff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .gallery {
@@ -2983,6 +3038,11 @@ button,
 
   .info__item a:hover,
   .info__item a:focus {
+    background-color: #1f57ff;
+  }
+
+  .news__link:hover,
+  .news__link:focus {
     background-color: #1f57ff;
   }
 }
@@ -3620,6 +3680,28 @@ button,
   .news__videos {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+  }
+
+  .news__link-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 16px;
+  }
+
+  .news__link-item span:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .news__link {
+    width: 100%;
   }
 
   .gallery {
