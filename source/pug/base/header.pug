@@ -17,10 +17,10 @@ mixin header(headerMods, currentPage)
         href: "holidays.html",
         text: "Каникулы"
       },
-      //- {
-      //-   href: "news.html",
-      //-   text: "Новости"
-      //- },
+      {
+        href: "news.html",
+        text: "Новости"
+      },
       {
         href: "gallery.html",
         text: "Галерея"
@@ -30,7 +30,7 @@ mixin header(headerMods, currentPage)
   header.header(class=headerMods)
     .header__wrapper.container
       if(currentPage === "main")
-        a.header__logo
+        span.header__logo
           +icon("logo", 48, 47)
           span 1&nbsp;&ndash; в&nbsp;класс
       else
@@ -47,6 +47,6 @@ mixin header(headerMods, currentPage)
             each link, index in headerLinks
               li.main-nav__item
                 if(index === currentPage)
-                  a.main-nav__link.main-nav__link--active=link.text
+                  span.main-nav__link.main-nav__link--active=link.text
                 else
                   a.main-nav__link(href=link.href)=link.text
