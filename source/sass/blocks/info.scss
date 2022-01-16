@@ -135,6 +135,21 @@
   }
 }
 
+.info__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
 .info__list {
   display: flex;
   flex-direction: column;
