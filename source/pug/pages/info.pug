@@ -17,6 +17,22 @@ block main
 
     section.info
       .info__wrapper.container
+        ul.info__list
+          li.info__item
+            span Правила по&nbsp;математике для начальной школы
+            a(href="downloads/math-rules.pdf" download) Скачать
+          li.info__item
+            span Правила по&nbsp;математике 1&nbsp;класс
+            a(href="downloads/math-rules-1-class.pdf" download) Скачать
+          li.info__item
+            span Правила-памятка по&nbsp;русскому языку 1&nbsp;класс
+            a(href="downloads/russian-rules-1-class.pdf" download) Скачать
+          li.info__item
+            span Сборник для развития техники чтения 1&nbsp;класс
+            a(href="downloads/reading-lessons.pdf" download) Скачать
+          li.info__item
+            span Советы психолога
+            a(href="downloads/psy-advice.pdf" download) Скачать
         .info__content.info__content--red
           h3.info__content-title Русский алфавит
           p.info__content-text <b>Алфавит</b>&nbsp;&mdash; это буквы, расположенные по&nbsp;порядку.
@@ -52,11 +68,7 @@ block main
           ol.info__content-list
             each item in readList
               li.info__content-item!=item
-        //- ul.info__list
-        //-   each item in infoList
-        //-     li.info__item
-        //-       span!=item.text
-        //-       a(href=item.link download) Скачать
+
 
 
 block modals
