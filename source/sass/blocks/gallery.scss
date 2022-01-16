@@ -43,7 +43,8 @@
 .gallery__slide {
   align-self: center;
 
-  img {
+  img,
+  video {
     display: block;
     object-fit: cover;
   }

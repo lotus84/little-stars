@@ -16,7 +16,7 @@ mixin news(props = {})
           each video in props.videos
             .news__media-box
               video(preload="metadata" controls)
-                source(src="video/VID_20211001_085018.mp4" type="video/mp4")
+                source(src=`video/${video.name}.mp4` type="video/mp4")
       if props.links
         .news__link-list
           each link in props.links

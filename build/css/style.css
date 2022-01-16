@@ -2754,7 +2754,7 @@ button,
 
 .info__item:nth-child(odd) a {
   color: #ffffff;
-  background-color: #4573ff;
+  background-color: #7094FF;
 }
 
 .info__item:not(:last-child) {
@@ -2995,7 +2995,8 @@ button,
   align-self: center;
 }
 
-.gallery__slide img {
+.gallery__slide img,
+.gallery__slide video {
   display: block;
   -o-object-fit: cover;
   object-fit: cover;
@@ -3084,7 +3085,7 @@ button,
 
   .info__item:nth-child(odd) a:hover,
   .info__item:nth-child(odd) a:focus {
-    background-color: #1f57ff;
+    background-color: #4573ff;
   }
 
   .news__link:hover,

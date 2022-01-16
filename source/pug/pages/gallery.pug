@@ -17,6 +17,26 @@ block main
 
     section.gallery.js-slider-block
       .gallery__wrapper.container
+        h2.gallery__title Урок технологии
+        .gallery__swiper.swiper
+          .gallery__swiper-wrapper.swiper-wrapper
+            each image in imagesLessonTechList
+              if image.isVideo
+                .gallery__slide.swiper-slide
+                  video(preload="metadata" controls)
+                    source(src=`img/lesson/${image.name}.mp4` type="video/mp4")
+              else
+                .gallery__slide.swiper-slide
+                  img(src=`img/lesson/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+          .gallery__swiper-controls
+            button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
+              +icon("arrow-left", 50, 50)
+            .gallery__swiper-pagination.swiper-pagination
+            button.gallery__swiper-button.gallery__swiper-button--next(type="button" aria-label="Следующий слайд")
+              +icon("arrow-right", 50, 50)
+
+    section.gallery.js-slider-block
+      .gallery__wrapper.container
         h2.gallery__title Зимние каникулы 2022
         .gallery__swiper.swiper
           .gallery__swiper-wrapper.swiper-wrapper
