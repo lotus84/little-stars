@@ -9,6 +9,7 @@ const initSliders = () => {
     const swiperBlock = item.querySelector('.swiper');
 
     const swiper = new Swiper(swiperBlock, {
+      lazy: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'fraction',
