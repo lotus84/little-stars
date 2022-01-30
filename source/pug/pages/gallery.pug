@@ -27,7 +27,7 @@ block main
                     source(src=`img/lesson/${image.name}.mp4` type="video/mp4")
               else
                 .gallery__slide.swiper-slide
-                  img(src=`img/lesson/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+                  img(class="swiper-lazy", data-src=`img/lesson/${image.name}`, width=image.width, height=image.height, alt=image.alt)
           .gallery__swiper-controls
             button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
               +icon("arrow-left", 50, 50)
@@ -42,7 +42,7 @@ block main
           .gallery__swiper-wrapper.swiper-wrapper
             each image in imagesWinterList
               .gallery__slide.swiper-slide
-                img(src=`img/winter/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+                img(class="swiper-lazy", data-src=`img/winter/${image.name}`, width=image.width, height=image.height, alt=image.alt)
           .gallery__swiper-controls
             button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
               +icon("arrow-left", 50, 50)
@@ -57,7 +57,7 @@ block main
           .gallery__swiper-wrapper.swiper-wrapper
             each image in imagesList
               .gallery__slide.swiper-slide
-                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+                img(class="swiper-lazy", data-src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
           .gallery__swiper-controls
             button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
               +icon("arrow-left", 50, 50)
@@ -72,7 +72,7 @@ block main
           .gallery__swiper-wrapper.swiper-wrapper
             each image in imagesNovemberList
               .gallery__slide.swiper-slide
-                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+                img(class="swiper-lazy", data-src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
           .gallery__swiper-controls
             button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
               +icon("arrow-left", 50, 50)
@@ -87,7 +87,7 @@ block main
           .gallery__swiper-wrapper.swiper-wrapper
             each image in imagesSeptemberList
               .gallery__slide.swiper-slide
-                img(src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+                img(class="swiper-lazy", data-src=`img/slides/${image.name}`, width=image.width, height=image.height, alt=image.alt)
           .gallery__swiper-controls
             button.gallery__swiper-button.gallery__swiper-button--prev(type="button" aria-label="Предыдущий слайд")
               +icon("arrow-left", 50, 50)

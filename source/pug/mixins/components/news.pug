@@ -10,7 +10,7 @@ mixin news(props = {})
         .news__images
           each image in props.images
             .news__img-box
-              img(src=`img/content/${image.name}`, width=image.width, height=image.height, alt=image.alt)
+              img(class="lazyload", data-src=`img/content/${image.name}`, width=image.width, height=image.height, alt=image.alt)
       if props.videos
         .news__videos
           each video in props.videos
