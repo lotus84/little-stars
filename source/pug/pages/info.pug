@@ -17,6 +17,12 @@ block main
 
     section.info
       .info__wrapper.container
+        .info__content.info__content--green
+          h3.info__content-title За&nbsp;каникулы найди и&nbsp;почитай рассказы о&nbsp;Великой Отечественной войне, стихи для младших школьников
+          p.info__content-subtitle Можешь воспользоваться списком (выбрать по&nbsp;желанию)
+          ol.info__content-list
+            each item in springReadingList
+              li.info__content-item!=item
         ul.info__list
           li.info__item
             span Задания на&nbsp;каникулы с&nbsp;14 по&nbsp;20 февраля 2022 (рекомендованные)
